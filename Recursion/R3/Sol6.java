@@ -1,4 +1,4 @@
-public class sixth {
+class Sol6 {
 
     //  find the length of a string
     public static int fun(String str) {

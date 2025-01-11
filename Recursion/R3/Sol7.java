@@ -1,23 +1,16 @@
-public class seventh {
+class Sol7 {
 
-    //  string to uppercase
-    public static String fun(String str) {
+    public static int findLength(String str) {
         if (str.isEmpty()) {
-            return "";
+            return 0;
         }
 
-        char firstChar = Character.toUpperCase(str.charAt(0));
-
-        String remainingString = fun(str.substring(1));
-
-        return firstChar + remainingString;
+        return 1 + findLength(str.substring(1));
     }
 
     public static void main(String[] args) {
-        String input = "hello";
-
-        // Call the method and print the result
-        String result =fun(input);
-        System.out.println("Uppercase String: " + result);
+        String input = "Serendipity";
+        int length = findLength(input);
+        System.out.println("The length of the string " + input + " is: " + length);
     }
 }

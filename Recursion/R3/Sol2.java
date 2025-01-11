@@ -1,7 +1,6 @@
-public class second {
-       // count char
+class Sol2 {
 
-    public static int fun(String str, char chr) {
+    public static int fun(String str, char ch) {
 
         int count=0;
 
@@ -10,19 +9,19 @@ public class second {
         }
         char first = str.charAt(0);
 
-        if (first == chr) {
+        if (first == ch) {
            count++;
         }
-        return count + fun(str.substring(1), chr);
+        return count + fun(str.substring(1), ch);
         
     }
  
 
     public static void main(String[] args) {
         String input = "aeroplane";
-        char chr = 'e';
+        char ch = 'e';
         
-        int result = fun(input, chr);
+        int result = fun(input, ch);
         System.out.println("count : " + result);
     }
 }

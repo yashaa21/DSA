@@ -1,63 +1,85 @@
-//Reverse the list
 class Node{
+
 	int data;
 	Node next = null;
+	
 	Node(int data){
-	this.data = data;	
-		}
+	
+		this.data = data;
+	
 	}
+
+}
+
 
 class Sol1{
 	
-Node head = null;
-	void reverse(){
-	Node after = null;
-	Node curr = head;
-	Node prev = null;
-	while(curr!=null){
-	after = curr.next;
-	curr.next=prev;
-	prev = curr;
-	curr = after;
+	Node head = null;
+	
+	void addFirst(int data){
+		
+		Node newNode = new Node(data);
+		if(head == null){
+			head = newNode;
+		}else{
+			newNode.next = head;
+			head = newNode;			
 		}
-	head = prev;
+		
 	}
+	
+	// Method to reverse the linked list
+    	void reverse() {
+        	Node prev = null;
+        	Node current = head;
+        	Node next = null;
+
+        	while (current != null) {
+        	    next = current.next; // Store the next node
+        	    current.next = prev; // Reverse the link
+        	    prev = current;      // Move prev forward
+            	    current = next;      // Move current forward
+        	}
+
+      		head = prev; // Update the head to the new first node
+    	}
+	
 
 
-	void addfirst(int data){
-	Node nn = new Node(data);
-	if(head == null){
-	head = nn;
+	
+	void printLinkedList(){
+		
+		if(head == null){
+			System.out.println("Linked List is Empty");
 		}
-else{
-	nn.next =head;
-	head = nn;
-		}	
-	}
-
-	void printlist(){
-		if(head==null){
-		System.out.println("List is empty");
-			}
 		else{
-		Node temp = head;
-		while(temp.next!=null){
-		System.out.print(temp.data + " -> ");
-		temp=temp.next;
-		}
-	System.out.println(temp.data);
+			Node temp = head;
+			
+			while(temp.next != null){
+				System.out.print(temp.data + " -> ");
+				temp = temp.next;
+			}
+			
+			System.out.println(temp.data);
 		}
 	}
 	
-	public static void main(String [] args){
+
+	
+	public static void main(String[] args){
+	
 		Sol1 ll = new Sol1();
-		ll.addfirst(5);
-		ll.addfirst(4);
-		ll.addfirst(3);
-		ll.addfirst(2);
-		ll.addfirst(1);
-		ll.printlist();
+		ll.addFirst(5);
+		ll.addFirst(4);
+		ll.addFirst(3);
+		ll.addFirst(2);
+		ll.addFirst(1);
+		
+		ll.printLinkedList();
+
 		ll.reverse();
-		ll.printlist();
+		ll.printLinkedList();
+	
 	}
+
 }

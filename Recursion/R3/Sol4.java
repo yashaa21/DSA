@@ -1,6 +1,5 @@
-public class fourth {
+class Sol4 {
 
-    //  check palindrome
 
     public static boolean fun(String str) {
         if (str.length() <= 1) {
@@ -20,7 +19,7 @@ public class fourth {
     }
 
     public static void main(String[] args) {
-        String input = "radar";
+        String input = "madam";
 
         boolean result = fun(input);
 

@@ -1,5 +1,3 @@
-//Detect a loop insdide liat
-
 class Node {
     int data;
     Node next;
@@ -15,16 +13,16 @@ class Sol2 {
     Node head;
 
     public void addFirst(int data) {
-        Node nn = new Node(data);
+        Node newNode = new Node(data);
         if (head == null) {
-            head = nn;
+            head = newNode;
             return;
         }
         Node current = head;
         while (current.next != null) {
             current = current.next;
         }
-        current.next = nn;
+        current.next = newNode;
     }
 
     public void createLoop(int position) {
@@ -64,7 +62,7 @@ class Sol2 {
         ll.addFirst(2);
         ll.addFirst(3);
         ll.addFirst(4);
-        ll.addFirst(2);
+        ll.addFirst(5);
 
         System.out.println("No Loop: " + ll.detectLoop()); 
 

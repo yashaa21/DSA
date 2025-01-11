@@ -1,0 +1,28 @@
+Equilibrium of an array
+
+You are given an array A of integers of size N
+Your task os to find the equilibrium index of the arrayThe equilibrium of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes
+If there are no elements that are at lower indexes, then corresponding sum of elements is considered as 0
+
+Note:
+Array indexing starts from 0
+If there is no equilibrium index then return -1
+If there are more than one equilibrium indexes then return the minimum index
+
+Problem constraints: 
+1 <= N <= 105
+-105 <= A[i] <= 105
+
+Input:
+
+i/p 1 :
+A = [-7,1,5,2,-4,3,0]
+
+i/p 2:
+A = [1,2,3]
+
+Sample output:
+
+o/p 1 : 3
+
+o/p 2 : -1

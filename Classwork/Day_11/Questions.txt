@@ -1,0 +1,368 @@
+	Definition of Sub array:
+	1. Continuous Indexes
+	2. start < end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mention all the sub arrays from this array:
+Arr : [6,7,8,9]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Que: Given an array of size N. Tell me total number of the possible sub arrays.
+
+	A. N
+	B. N * (N-1)
+	C. N * (N + 1) /2
+	D. N * (N + 1)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Calculate total number of sub arrays
+	Arr: [10,20,30]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Calculate total number of sub arrays
+	Arr: [10,20,30,40,50,60,80,7]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Que: Write code without using Gauss theorem to calculate total number of sub arrays
+	Arr: [1,2,3]
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	Que: Given an array of size N. Print all the elements in a given sub array from start to end.
+		start : 2
+		end : 6
+		Arr: [-5,1,-1,4,2,-3,1,2,5,80,33]
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	Calculate number of sub arrays in 
+	Arr: [-1,2,5,55,41,2,7,8,3,2,1,57]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Given an array of size N. Print all the sub arrays
+	Arr : [1,2,3,4]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Given an array of size N. Print sum of every single sub array.
+	Arr : [1,2,3,4]
+	
+	Sample O/p: 
+	1
+	3
+	6
+	10
+	2
+	5
+	9
+	3
+	7
+	4
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Given an array of size N. Print sum of every single sub array using prefix sum.
+	Arr : [1,2,3,4]
+	
+	pSArr : [1,3,6,10]
+	
+	Sample O/p: 
+	i = 0
+		1
+		3
+		6
+		10
+	i = 1 (pSArr[j] - pSArr[i-1])
+		2  -> 3 -1
+		5 -> 6 -1
+		9 -> 10 - 1
+	i = 2 (pSArr[j] - pSArr[i-1])
+		3 -> 6 - 3
+		7 -> 10 -3
+	i = 3 (pSArr[j] - pSArr[i-1])
+		4 -> 10 - 6
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Given an array of size N. Print sum of every single sub array using carry forward.
+	Arr : [1,2,3,4]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Given an array of size N. Find sum of sum of all sub arrays.
+	Arr : [1,2,3,4]
